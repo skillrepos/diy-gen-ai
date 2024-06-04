@@ -12,5 +12,4 @@ cd /workspaces/llm-explore
 rm -rf fuse-3.16.2
 rm fuse-3.16.2.tar.gz
 docker compose up -d
-chmod +x startLMStudio.sh
-chmod +x startJan.sh
+
