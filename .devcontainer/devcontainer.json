@@ -1,0 +1,30 @@
+{
+    "name": "Debian",
+    "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+    "hostRequirements": {
+       "cpus": 4,
+       "memory": "16gb",
+       "storage": "32gb"
+    },
+    "features": {
+       "ghcr.io/devcontainers/features/docker-from-docker:1": {},
+       "ghcr.io/devcontainers/features/github-cli:1": {},
+       "ghcr.io/devcontainers/features/python:1": {}
+    },
+    "containerEnv": {
+        "DISPLAY": "127.0.0.1:0"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.terminal.activateEnvInCurrentTerminal": true,
+                "python.defaultInterpreterPath": ".venv/bin/python"
+            }
+        }
+    },
+    "runArgs": [ "--cap-add=SYS_ADMIN", "--privileged" ],
+    "forwardPorts": [5800],
+    "portsAttributes": {"5800": {"label": "LM Studio"}},
+    "postStartCommand": "bash -c /workspaces/llm-explore/setup.sh",
+    "postAttachCommand": "bash"
+}
