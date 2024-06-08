@@ -37,7 +37,8 @@ This will run for several minutes as well.
 
 This will download the LM Studio image and start it running.
 
-**5. Finally, open up the *labs.md* file so you can follow along with the labs. You can either open it in a separate browser instance or open it in the codespace. If you open it in the codespace, make sure to *Open Preview* so you can see it in Markdown form as intended.
+**5. Finally, open up the *labs.md* file so you can follow along with the labs.**
+You can either open it in a separate browser instance or open it in the codespace. If you open it in the codespace, make sure to *Open Preview* so you can see it in Markdown form as intended.
 ![Opening labs](./images/dga07.png?raw=true "Opening labs")
 
 **Now, you are ready for the labs!**
