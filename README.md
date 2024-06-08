@@ -1,45 +1,45 @@
-# DIY Gen AI - lab setup
+# DIY Gen AI
 
-These instructions will guide you through configuring a GitHub Codespaces environment that you can use to run the course labs.
+Repository for LM Studio workshop
 
-These steps **must** be completed prior to starting the actual labs.
+These instructions will guide you through configuring a GitHub Codespaces environment that you can use to run the course labs. 
+If you prefer to install LM Studio directly, you can get it from https://lmstudio.ai. Note that for Mac, it is only supported on systems with the M# chips. 
 
-## Step 1. To create your working environment for the labs, create a codespace by clicking on the button below:
+If you install it yourself, some elements in the labs may be different for your setup. The instructions here will reference the codespace version.
 
-Click on this button ⬇️
+If you wish to use the codespace environment which will provide you with a running instance of LM Studio, follow the instructions below.
+
+**1. Click on the button below to start a new codespace from this repository.** (You may also fork the repo and create a codespace from your fork if you prefer.)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/diy-gen-ai?quickstart=1)
+
+**2. Then click on the option to create a new codespace.**
+
+![Creating new codespace from button](./images/dga01.png?raw=true "Creating new codespace from button")
+
+This will run for several minutes while it gets everything ready.
+
+**3. After the codespace has initialized there will be a terminal present. Run the command *./setup.sh* in the terminal.**
+```
+./setup.sh
+```
+ 
+![Running setup.sh](./images/dga05.png?raw=true "Running setup.sh")
+
+This will run for several minutes as well.
+
+**4. After setup.sh finishes, run the script *./startLMStudio.sh* in the terminal.**
+```
+./startLMStudio.sh
+```
+
+![Running startlmstudio.sh](./images/dga06.png?raw=true "Running startlmstudio.sh")
+
+This will download the LM Studio image and start it running.
+
+**5. Finally, open up the *labs.md* file so you can follow along with the labs. You can either open it in a separate browser instance or open it in the codespace. If you open it in the codespace, make sure to *Open Preview* so you can see it in Markdown form as intended.
+![Opening labs](./images/dga07.png?raw=true "Opening labs")
+
+**Now, you are ready for the labs!**
+
 <br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/diy-gen-ai?quickstart=1)
-
-<br/><br/>
-Then click on the option to create a new codespace.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Creating new codespace from button](./images/dga01.png?raw=true "Creating new codespace from button")
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**This will run for several minutes while it gets everything ready.**
-  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- After the codespace has initialized there will be a terminal present.
-
-<br/><br/>
-
-## Step 2. Start the Kubernetes cluster and complete setup
-
-2. In your codespace's terminal, run the two following commands - wait for the first one to finish before running the second. (**These will also take several minutes to run...**):
-
-      ```
-      setup.sh
-      startLMStudio.sh
-      ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Running setup](./images/dga05.png?raw=true "Running setup")
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Running startup for LM Studio](./images/dga06.png?raw=true "Running startup for LM Studio")
-
-
-
-<br/><br/>
-## Step 3. Open the labs document
-
-3. After the codespace has started, open the labs document by going to the file tree on the left, find the file named **labs.md**, right-click on it, and open it with the **Preview** option.)
-
-![Labs doc preview in codespace](./images/dga07.png?raw=true "Labs doc preview in codespace")
-
-This will open it up in a tab above your terminal. Then you can follow along with the steps in the labs. 
-Any command in the gray boxes is either code intended to be run in the console or code to be updated in a file.
