@@ -96,13 +96,29 @@ Phi 2
 8. On the *Local Server* screen, click on the green *Start Server* button on the left side.
 ![Switching to chat](./images/dga30.png?raw=true "Switching to chat")
 
-9. 
-
+9. Now, back in the command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
+```
+curl http://localhost:1234/v1/models
+```
+10. Finally, let's try a simple query with curl. Try the query below.
+```
+curl http://localhost:1234/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{ 
+    "messages": [ 
+      { "role": "system", "content": "Always answer in rhymes." },
+      { "role": "user", "content": "Introduce yourself." }
+    ], 
+    "temperature": 0.7, 
+    "max_tokens": -1,
+    "stream": true
+}'
+```
    
-10. 
 11. 
 12. 
-13.
+13. 
+14.
 Start typing a function definition as below
 ```
 def is_prime(n):
