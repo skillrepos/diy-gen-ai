@@ -209,20 +209,61 @@ main();
 ```
 npm  start
 ```
+<p align="center">
+**[END OF LAB]**
+</p>
+</br></br>
+
+**Lab 4 - Using Ollama to run models locally**
+
+**Purpose: In this lab, we’ll start getting familiar with Ollama, another way to run models locally.**
+
+1. First, to get *ollama* downloaded, execute the following command:
+```
+curl -fsSL https://ollama.com/install.sh | sh
+```
+![downloading ollama](./images/dga36.png?raw=true "downloading ollama")
+
+2. Next, start the ollama server running with the following command:
+```
+ollama serve &
+```
+![downloading ollama](./images/dga37.png?raw=true "downloading ollama")
+
+3. Now let's find a model to use.
+Go to https://ollama.com and in the *Search models* box at the top, enter *llava*.
+![searching for llava](./images/dga39.png?raw=true "searching for llava")
+
+4. Click on the first entry to go to the specific page about this model. Scroll down and scan the various information available about this model.
+![reading about llava](./images/dga40.png?raw=true "reading about llava")
+
+5. While it's not necessary to do as a separate step, first pull the model down with ollama and then run it.
+```
+ollama pull llava
+ollama run llava
+```
+6. Now you can query the model. Since this is a multimodal model, you can ask it about an image too. Try the following prompt.
+```
+What's in this image?  images/simple-face.jpg
+```
+7. Now, let's try that with the API.
+```
+curl http://localhost:11434/api/generate -d '{
+  "model": "llava",
+  "prompt":"What's in this picture?",
+  "images" : "'"$( base64 images/simple-face.jpg)"'"
+}'
+```
+
+8. You should get a similar answer as before. You can try out some other prompts/queries if you want.
 
 
-12. 
-13. 
-14.
-Start typing a function definition as below
-```
-def is_prime(n):
-```
+
 3. Leave the cursor at the end of the line.
 
 ![starting point](./images/cdd104.png?raw=true "starting point") 
 
-4. Hit **Ctrl+Enter** to see options
+4.
 
 5. Pick one of the options that is longer and/or more complex (if there is one) and **Accept suggestion #**. If there's not one that's longer/more complex, just pick an alternative one and **Accept suggestion #**.
 
