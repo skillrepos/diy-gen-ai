@@ -66,10 +66,11 @@ Phi 2
 <p align="center">
 **[END OF LAB]**
 </p>
+</br></br>
 
 **Lab 2 - Chatting with our model**
 
-**Purpose: Interacting with the model. In this lab, we'll see how to load and interact with the model through chat and terminal.**
+**Purpose: In this lab, we'll see how to load and interact with the model through chat and terminal.**
 
 1. First, let's switch to the *AI Chat* interface in LM Studio by clicking on the third icon from the top in the left bar.
 ![Switching to chat](./images/dga22.png?raw=true "Switching to chat")
@@ -114,8 +115,102 @@ curl http://localhost:1234/v1/chat/completions \
     "stream": true
 }'
 ```
-   
-11. 
+
+<p align="center">
+**[END OF LAB]**
+</p>
+</br></br>
+
+**Lab 3 - Coding to LM Studio**
+
+**Purpose: In this lab, we'll see how to do some simple Python and Javascript code to interact with the model.**
+
+1. While we got output from the last step of lab 2, it wasn't very useful in that form. Let's setup a Python environment to do some simple coding in. Run the commands below to set things up.
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+2. Now, let's create a new file called *simple-app.py* to put our code in.
+```
+code simple-app.py
+```
+
+3. Enter the code below in the *simple-app.py* file and then save when done. (Again, you can change the content to whatever you want.)
+```
+from openai import OpenAI
+
+client = OpenAI(base_url="http://localhost:1234/v1", api_key="n-a")
+
+completion = client.chat.completions.create(
+    model="local-model",
+    messages=[
+        {"role": "system", "content": "Always answer in rhymes."},
+        {"role": "user", "content": "Introduce yourself."}
+    ],
+    temperature=0.7,
+}
+
+print(completion.choices[0].message.content)
+```
+
+4. Now, run the program to see the output.
+```
+python simple-app.py
+```
+
+5. Next, we'll switch to doing a simple example in JavaScript for LM Studio. First, switch to a new terminal by clicking the "+" button at the top right to add a second terminal.
+
+
+6. We need to *bootstrap* things for LM Studio by setting up the *lms* command line tool. Run the following command in the terminal.
+```
+~/.cache/lm-studio/bin/lms bootstrap
+```
+![bootstrapping lms](./images/dga32.png?raw=true "bootstrapping lms")
+
+7. Rerun your profile file and make sure that *lms* runs there.
+```
+source /home/vscode/.profile
+lms
+```
+![checking lms](./images/dga33.png?raw=true "checking lms")
+
+8. Use the *lms* command to create a new empty project, run through it's interactive process, and then switch to it.
+```
+lms create node-javascript-empty
+cd <project-name>
+```
+
+9. Now, you can enter code like the following in your *src/index.js* file. (You can change the content if you want.)
+```
+// index.js
+const { LMStudioClient } = require("@lmstudio/sdk");
+
+async function main() {
+  // Create a client to connect to LM Studio, then load a model
+  const client = new LMStudioClient();
+  const model = await client.llm.load("theBloke/phi-2.Q2_K.gguf");
+
+  // Predict!
+  const prediction = model.respond([
+    { role: "system", content: "You are a helpful AI assistant." },
+    { role: "user", content: "What is some good advice?" },
+  ]);
+  for await (const text of prediction) {
+    process.stdout.write(text);
+  }
+}
+
+main();
+```
+
+10. Finally, let's run the code!
+```
+npm  start
+```
+
+
 12. 
 13. 
 14.
