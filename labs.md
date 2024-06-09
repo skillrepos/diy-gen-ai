@@ -1,7 +1,7 @@
 # DIY Gen AI
 ## Setting up your own LLM host, chat, and AI server using LM Studio - half-day workshop
 ## Session labs 
-## Revision 1.0 - 06/04/24
+## Revision 1.1 - 06/08/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -67,15 +67,43 @@ Phi 2
 **[END OF LAB]**
 </p>
 
-**Lab 2 - Using Copilot to simplify and explain code**
+**Lab 2 - Chatting with our model**
 
-1. Create a new file named prime.py. Create it via the same process as we used in Lab 1 by entering the line below in the terminal.
+**Purpose: Interacting with the model. In this lab, we'll see how to load and interact with the model through chat and terminal.**
 
-```
-code prime.py
-```
+1. First, let's switch to the *AI Chat* interface in LM Studio by clicking on the third icon from the top in the left bar.
+![Switching to chat](./images/dga22.png?raw=true "Switching to chat")
 
-2. Start typing a function definition as below
+2. Now, at the top center of the *AI Chat* screen, click on the down arrow next to the *Select a model to load* text and select the phi2 model we downloaded.
+![Switching to chat](./images/dga23.png?raw=true "Switching to chat")
+  
+3. You should see a progress bar while the model is loading and then the model should show up as loaded.
+![Switching to chat](./images/dga24.png?raw=true "Switching to chat")
+![Switching to chat](./images/dga25.png?raw=true "Switching to chat")
+
+4. You can explore some of the options over in the right-hand side window. You don't have to change anything here.
+![Switching to chat](./images/dga26.png?raw=true "Switching to chat")
+
+5. Now, let's give our loaded model a query. In the *USER* text entry area, enter your query. (An example one is shown, but you can choose your own.)
+![Switching to chat](./images/dga27.png?raw=true "Switching to chat")
+
+6. Example output from the sample query is shown below. Note that if you don't like the answer, you can click the *Regenerate* button to get another answer.
+![Switching to chat](./images/dga28.png?raw=true "Switching to chat")
+
+7. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the next to bottom icon for the *Local Server* screen.
+![Switching to chat](./images/dga29.png?raw=true "Switching to chat")
+
+8. On the *Local Server* screen, click on the green *Start Server* button on the left side.
+![Switching to chat](./images/dga30.png?raw=true "Switching to chat")
+
+9. 
+
+   
+10. 
+11. 
+12. 
+13.
+Start typing a function definition as below
 ```
 def is_prime(n):
 ```
