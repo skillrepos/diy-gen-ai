@@ -1,6 +1,5 @@
 {
-    "name": "Debian",
-    "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+    "build": { "dockerfile": "Dockerfile" },
     "hostRequirements": {
        "cpus": 2,
        "memory": "8gb",
