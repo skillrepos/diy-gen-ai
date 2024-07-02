@@ -81,11 +81,11 @@ llama
 ![Switching to chat](./images/dga22.png?raw=true "Switching to chat")
 
 2. Now, at the top center of the *AI Chat* screen, click on the down arrow next to the *Select a model to load* text and select the phi2 model we downloaded.
-![Switching to chat](./images/dga23.png?raw=true "Switching to chat")
+![Switching to chat](./images/dga23a.png?raw=true "Switching to chat")
   
-3. You should see a progress bar while the model is loading and then the model should show up as loaded.
+3. You should see a progress bar while the model is loading and then the model should show up as loaded. (If a dialog box comes up about the System Prompt, you can just choose to accept the new one.)
 ![Switching to chat](./images/dga24.png?raw=true "Switching to chat")
-![Switching to chat](./images/dga25.png?raw=true "Switching to chat")
+![Switching to chat](./images/dga25a.png?raw=true "Switching to chat")
 
 4. You can explore some of the options over in the right-hand side window. You don't have to change anything here.
 ![Switching to chat](./images/dga26.png?raw=true "Switching to chat")
