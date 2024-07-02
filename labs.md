@@ -94,7 +94,7 @@ You are an excellent summarizer. Always answer with 3 key points.
 ![Switching to chat](./images/dga26a.png?raw=true "Switching to chat")
 
 6. Now, let's give our loaded model a query. In the *USER* text entry area, enter your query. (An example one is shown, but you can choose your own.)
-![Switching to chat](./images/dga27.png?raw=true "Switching to chat")
+![User query](./images/dga27a.png?raw=true "User query")
 
 7. Example output from the sample query is shown below. Note that if you don't like the answer, you can click the *Regenerate* button to get another answer.
 ![Switching to chat](./images/dga28.png?raw=true "Switching to chat")
@@ -103,7 +103,7 @@ You are an excellent summarizer. Always answer with 3 key points.
 ![Switching to chat](./images/dga29.png?raw=true "Switching to chat")
 
 9. On the *Local Server* screen, click on the green *Start Server* button on the left side.
-![Switching to chat](./images/dga30.png?raw=true "Switching to chat")
+![Switching to chat](./images/dga30a.png?raw=true "Switching to chat")
 
 10. Now, back in the command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
 ```
