@@ -87,22 +87,25 @@ llama
 ![Switching to chat](./images/dga24.png?raw=true "Switching to chat")
 ![Switching to chat](./images/dga25a.png?raw=true "Switching to chat")
 
-4. You can explore some of the options over in the right-hand side window. You don't have to change anything here.
-![Switching to chat](./images/dga26.png?raw=true "Switching to chat")
+4. Over in the right-hand side window, you can explore the different options. Change the *System Prompt* field to be:
+```
+You are an excellent summarizer. Always answer with 3 key points.
+```
+![Switching to chat](./images/dga26a.png?raw=true "Switching to chat")
 
-5. Now, let's give our loaded model a query. In the *USER* text entry area, enter your query. (An example one is shown, but you can choose your own.)
+6. Now, let's give our loaded model a query. In the *USER* text entry area, enter your query. (An example one is shown, but you can choose your own.)
 ![Switching to chat](./images/dga27.png?raw=true "Switching to chat")
 
-6. Example output from the sample query is shown below. Note that if you don't like the answer, you can click the *Regenerate* button to get another answer.
+7. Example output from the sample query is shown below. Note that if you don't like the answer, you can click the *Regenerate* button to get another answer.
 ![Switching to chat](./images/dga28.png?raw=true "Switching to chat")
 
-7. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the next to bottom icon for the *Local Server* screen.
+8. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the next to bottom icon for the *Local Server* screen.
 ![Switching to chat](./images/dga29.png?raw=true "Switching to chat")
 
-8. On the *Local Server* screen, click on the green *Start Server* button on the left side.
+9. On the *Local Server* screen, click on the green *Start Server* button on the left side.
 ![Switching to chat](./images/dga30.png?raw=true "Switching to chat")
 
-9. Now, back in the command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
+10. Now, back in the command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
 ```
 curl http://localhost:1234/v1/models
 ```
