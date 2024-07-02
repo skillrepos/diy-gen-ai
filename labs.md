@@ -97,7 +97,7 @@ You are an excellent summarizer. Always answer with 3 key points.
 ![User query](./images/dga27a.png?raw=true "User query")
 
 7. Example output from the sample query is shown below. Note that if you don't like the answer, you can click the *Regenerate* button to get another answer.
-![Switching to chat](./images/dga28.png?raw=true "Switching to chat")
+![Switching to chat](./images/dga28b.png?raw=true "Switching to chat")
 
 8. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the next to bottom icon for the *Local Server* screen.
 ![Switching to chat](./images/dga29.png?raw=true "Switching to chat")
@@ -167,6 +167,7 @@ print(completion.choices[0].message.content)
 ```
 python simple-app.py
 ```
+TO-DO: insert example here of changing temperature of model to see response...
 
 5. Next, we'll switch to doing a simple example in JavaScript for LM Studio. First, switch to a new terminal by clicking the "+" button at the top right to add a second terminal.
 
