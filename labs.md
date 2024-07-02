@@ -1,7 +1,7 @@
 # DIY Gen AI
 ## Setting up your own LLM host, chat, and AI server using LM Studio - half-day workshop
 ## Session labs 
-## Revision 1.2 - 07/01/24
+## Revision 1.3 - 07/02/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -102,14 +102,15 @@ You are an excellent summarizer. Always answer with 3 key points.
 8. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the next to bottom icon for the *Local Server* screen.
 ![Switching to chat](./images/dga29.png?raw=true "Switching to chat")
 
-9. On the *Local Server* screen, click on the green *Start Server* button on the left side.
-![Switching to chat](./images/dga30a.png?raw=true "Switching to chat")
+9. On the *Local Server* screen, click on the green *Start Server* button on the left side. Afterwards, you should see activity showing the server is running.
+![Starting server](./images/dga30a.png?raw=true "Starting server")
+![Server running](./images/dga43.png?raw=true "Server running")
 
 10. Now, back in the command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
 ```
 curl http://localhost:1234/v1/models
 ```
-10. Finally, let's try a simple query with curl. Try the query below.
+11. Finally, let's try a simple query with curl. Try the query below.
 ```
 curl http://localhost:1234/v1/chat/completions \
   -H "Content-Type: application/json" \
@@ -167,31 +168,31 @@ print(completion.choices[0].message.content)
 ```
 python simple-app.py
 ```
-TO-DO: insert example here of changing temperature of model to see response...
 
-5. Next, we'll switch to doing a simple example in JavaScript for LM Studio. First, switch to a new terminal by clicking the "+" button at the top right to add a second terminal.
+5. Let's see what effect changing the temperature value has. Change the value for temperature in the program to 2.0 and then run the program again.
 
+6. Next, we'll switch to doing a simple example in JavaScript for LM Studio. First, switch to a new terminal by clicking the "+" button at the top right to add a second terminal.
 
-6. We need to *bootstrap* things for LM Studio by setting up the *lms* command line tool. Run the following command in the terminal.
+7. We need to *bootstrap* things for LM Studio by setting up the *lms* command line tool. Run the following command in the terminal.
 ```
 ~/.cache/lm-studio/bin/lms bootstrap
 ```
 ![bootstrapping lms](./images/dga32.png?raw=true "bootstrapping lms")
 
-7. Rerun your profile file and make sure that *lms* runs there.
+8. Rerun your profile file and make sure that *lms* runs there.
 ```
 source /home/vscode/.profile
 lms
 ```
 ![checking lms](./images/dga33.png?raw=true "checking lms")
 
-8. Use the *lms* command to create a new empty project, run through it's interactive process, and then switch to it.
+9. Use the *lms* command to create a new empty project, run through it's interactive process, and then switch to it.
 ```
 lms create node-javascript-empty
 cd <project-name>
 ```
 
-9. Now, you can enter code like the following in your *src/index.js* file. (You can change the content if you want.)
+10. Now, you can enter code like the following in your *src/index.js* file. (You can change the content if you want.)
 ```
 // index.js
 const { LMStudioClient } = require("@lmstudio/sdk");
@@ -214,7 +215,7 @@ async function main() {
 main();
 ```
 
-10. Finally, let's run the code!
+11. Finally, let's run the code!
 ```
 npm  start
 ```
