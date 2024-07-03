@@ -2,3 +2,4 @@ fuse-3*
 LM_Studio*
 lib/python*
 *.venv/*
+*_env/*
