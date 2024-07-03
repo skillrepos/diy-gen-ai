@@ -245,7 +245,7 @@ Go to https://ollama.com and in the *Search models* box at the top, enter *llava
 ![searching for llava](./images/dga39.png?raw=true "searching for llava")
 
 4. Click on the first entry to go to the specific page about this model. Scroll down and scan the various information available about this model.
-![reading about llava](./images/dga40.png?raw=true "reading about llava")
+![reading about llava](./images/dga40a.png?raw=true "reading about llava")
 
 5. While it's not necessary to do as a separate step, first pull the model down with ollama and then run it.
 ```
