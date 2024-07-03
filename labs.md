@@ -132,7 +132,7 @@ curl http://localhost:1234/v1/chat/completions \
 
 **Lab 3 - Coding to LM Studio**
 
-**Purpose: In this lab, we'll see how to do some simple Python and Javascript code to interact with the model.**
+**Purpose: In this lab, we'll see how to do some simple Python and JavaScript code to interact with the model.**
 
 1. While we got output from the last step of lab 2, it wasn't very useful in that form. Let's setup a Python environment to do some simple coding in. Run the commands below to set things up.
 ```
@@ -274,7 +274,7 @@ curl http://localhost:11434/api/generate -d '{
 
 **Lab 5 - Building a chatbot with Streamlit**
 
-**Purpose: In this lab, we'll see how to use the streamlit application to create a simple chatbot with Ollama.**
+**Purpose: In this lab, we'll see how to use the Streamlit application to create a simple chatbot with Ollama.**
 
 1. Switch back to the terminal that has your virtual Python environment running in it.
 
