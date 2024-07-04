@@ -224,7 +224,60 @@ npm  start
 </p>
 </br></br>
 
-**Lab 4 - Using Ollama to run models locally**
+**Lab 4 - Working with models in Hugging Face**
+
+**Purpose: In this lab, we’ll see how to get more information about, and work directly with, models in Hugging Face.**
+
+1. In a browser, go to *https://huggingface.co/models*.
+
+2. Let's search for a simple model to try out. In the search bar, enter the text *DialoGPT*. Look for and select the *microsoft/DialoGPT-medium* model.
+  ![model search](./images/dga44.png?raw=true "model search")
+
+3. Let's see how we can quickly get up and running with this model. On the *Model Card* page for the *microsoft/DialoGPT-medium* model, if you scroll down, you'll see a *How to use* section with some code in it. Highlight that code and copy it so we can paste it in a file in our workspace.
+
+![code to use model](./images/dga45.png?raw=true "code to use model")
+   
+4. Switch back to your codespace. Create a new file named dgpt-med.py (or whatever you want to call it). Paste the code you copied from the model card page into the file. You can create the new file from the terminal using:
+
+```
+code dgpt-med.py
+```
+![adding code](./images/dga46.png?raw=true "adding code")
+
+5. Now you can run your file by invoking it with python. You'll see it start to download the files associated with the model. This will take a bit of time to run.
+```
+python dgpt-med.py
+```
+![running the model](./images/dga47.png?raw=true "running the model")
+
+6. After the model loads, you'll see a *>> User:* prompt. You can enter a prompt or question here, and after some time, the model will provide a response.  **NOTE** This model is small and old and does not provide good responses usually or even ones that make sense. We are using it as a simple, quick demo only.
+
+```
+>> User: <prompt here>
+```
+![running the model](./images/dga48.png?raw=true "running the model")
+
+7. Let's now switch to a different model. Go back to the Hugging Face search and look for *phi3-vision*. Find and select the entry for *microsoft/Phi-3-vision-128k-instruct*.
+![finding the phi3-vision model](./images/dga49.png?raw=true "finding the phi3-vision model")
+
+8. Switch to the *Files and versions* page to see the sizes of the files in the Git repository. Note the larger sizes of the model files themselves.
+![examining the model files](./images/dga53.png?raw=true "examining the model files")
+
+9. Now, let's see how we can try this model out with no setup on our part. Go back to the model card page, and scroll down to the *Resources and Technical Documentation* section. Under that, select the entry for *Phi-3 on Azure AI Studio*.
+![Invoking model on Azure AI Studio](./images/dga54.png?raw=true "Invoking the model on Azure AI Studio")
+
+10. This will start up a separate browser instance of Azure AI Studio with the model loaded so you can query it. In the prompt area, enter in a prompt to have the AI describe a picture. You can upload one, enter the URL of one on the web, or use the example one suggested below. After you submit your prompt, the model should return a description of the photo.
+```
+Describe the image at https://media.istockphoto.com/id/1364253107/photo/dog-and-cat-as-best-friends-looking-out-the-window-together.jpg?s=2048x2048&w=is&k=20&c=Do171m5e2DbPIlWDs1JfHn-g8Et_Hxb2AskHg4cRYY4=
+```
+![Describing an image](./images/dga55.png?raw=true "Describing an image")
+
+<p align="center">
+**[END OF LAB]**
+</p>
+</br></br>
+
+**Lab 5 - Using Ollama to run models locally**
 
 **Purpose: In this lab, we’ll start getting familiar with Ollama, another way to run models locally.**
 
@@ -272,7 +325,7 @@ curl http://localhost:11434/api/generate -d '{
 </p>
 </br></br>
 
-**Lab 5 - Building a chatbot with Streamlit**
+**Lab 6 - Building a chatbot with Streamlit**
 
 **Purpose: In this lab, we'll see how to use the Streamlit application to create a simple chatbot with Ollama.**
 
