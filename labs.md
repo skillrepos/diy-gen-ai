@@ -120,7 +120,7 @@ You are an excellent summarizer. Always answer with 3 key points.
 ![Starting server](./images/dga30a.png?raw=true "Starting server")
 ![Server running](./images/dga43.png?raw=true "Server running")
 
-9. Now, back in the command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
+9. Now, switch back to your codespace and go to a terminal. (You can add a 2nd terminal if you want via the "+" icon over in the far right of the same line as TERMINAL. Or you can right-click and select New Terminal* or *Split Terminal*.) In the terminal's command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
 ```
 curl http://localhost:1234/v1/models
 ```
