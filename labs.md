@@ -263,7 +263,7 @@ code dgpt-med.py
 ```
 ![adding code](./images/dga46.png?raw=true "adding code")
 
-5. Now you can run your file by invoking it with python. You'll see it start to download the files associated with the model. This will take a bit of time to run.
+5. Don't forget to save your file. Now you can run your file by invoking it with python. You'll see it start to download the files associated with the model. This will take a bit of time to run.
 ```
 python dgpt-med.py
 ```
