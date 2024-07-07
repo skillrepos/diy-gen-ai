@@ -353,7 +353,10 @@ curl http://localhost:11434/api/generate -d '{
 
 **Purpose: In this lab, we'll see how to use the Streamlit application to create a simple chatbot with Ollama.**
 
-1. Switch back to the terminal that has your virtual Python environment running in it.
+1. Let's get another model to work with - a small one. Pull the *Phi3 mini* model with Ollama.
+```
+ollama pull phi3:mini
+```
 
 2. Create a new file for the chatbot app.
 ```
@@ -376,8 +379,14 @@ if "messages" not in st.session_state:
       # role is either "user" or "assistant"
       st.session_state["messages"] = [ {"role":  "assistant",  "content":  "What can I help you with?"}]
 ```
+5. Add code to write the msg history
+```
+# Write msg history
+for msg in st.session_state.messages:
+       st.chat_message(msg["role"]).write(msg["content"])
+```
 
-5. Now, add the generator function for responses
+6. Now, add the generator function for responses
 ```
 # Generator for streaming tokens
 def generate_response():
@@ -390,7 +399,7 @@ def generate_response():
                yield token
 ```
 
-6. Finally, add the code to save the messages and call the generator function
+7. Finally, add the code to save the messages and call the generator function
 
 ```
 if prompt := st.chat_input():
@@ -404,15 +413,15 @@ if prompt := st.chat_input():
       st.session_state.messages.append({"role": "assistant", "content": st.session_state["full_message"]})
 ```
 
-7. Now, save your file and run it with the following command.
+8. Now, save your file and run it with the following command.
 ```
 streamlit run chatapp.py
 ```
 
-8. After a moment this should open up a browser session with your chatbot running. You can ask it a question or prompt it as you want.
+9. After a moment this should open up a browser session with your chatbot running. You can ask it a question or prompt it as you want.
 ![interacting with chatbot](./images/dga50.png?raw=true "interacting with chatbot")
 
-9. One other thing you can try if you want is having it generate code or translate code. Notice that it has a "memory" between questions for context.
+10. One other thing you can try if you want is having it generate code or translate code. Notice that it has a "memory" between questions for context.
 ![interacting with chatbot](./images/dga51.png?raw=true "interacting with chatbot")
 ![interacting with chatbot](./images/dga52.png?raw=true "interacting with chatbot")
 
