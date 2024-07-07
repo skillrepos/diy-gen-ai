@@ -319,25 +319,30 @@ Go to https://ollama.com and in the *Search models* box at the top, enter *llava
 4. Click on the first entry to go to the specific page about this model. Scroll down and scan the various information available about this model.
 ![reading about llava](./images/dga40a.png?raw=true "reading about llava")
 
-5. While it's not necessary to do as a separate step, first pull the model down with ollama and then run it. (This will take a few minutes.)
+5. While it's not necessary to do as a separate step, first pull the model down with ollama. (This will take a few minutes.)
 ```
 ollama pull llava
+```
+6. Now you can run it with the command below.
+```
 ollama run llava
 ```
-6. Now you can query the model. Since this is a multimodal model, you can ask it about an image too. Try the following prompt.
+7. Now you can query the model by inputting text at the *>>>Send a message (/? for help)* prompt. Since this is a multimodal model, you can ask it about an image too. Try the following prompt that references a smiley face file in the repo.
 ```
-What's in this image?  images/simple-face.jpg
+What's in this image?  images/smiley.jpg
 ```
-7. Now, let's try that with the API.
+![smiley face analysis](./images/dga64a.png?raw=true "Smiley face analysis")
+
+8. Now, let's try a call with the API. You can stop the current run with a Ctrl-D or switch to another terminal. Then put in the command below. 
 ```
 curl http://localhost:11434/api/generate -d '{
   "model": "llava",
-  "prompt":"What's in this picture?",
-  "images" : "'"$( base64 images/simple-face.jpg)"'"
+  "prompt": "What causes wind?",
+  "stream": false
 }'
 ```
 
-8. You should get a similar answer as before. You can try out some other prompts/queries if you want.
+9. This will take a minute or so to run. You should a single response object returned. You can try out some other prompts/queries if you want.
 
 <p align="center">
 **[END OF LAB]**
