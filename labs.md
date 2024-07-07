@@ -17,8 +17,9 @@
 **Purpose: In this lab, we’ll start to learn about models through working with one in LM Studio.**
 
 1. In the Codespace's terminal, run the script *./getlink.sh*. This will output a link that you can click on to get to the LM Studio instance. Use *Ctrl/Cmd+Click* to open the browser session. 
- 
-![Getting to LM Studio](./images/dga08a.png?raw=true "Getting to LM Studio")
+
+![Getting to LM Studio](./images/dga08b.png?raw=true "Getting to LM Studio") 
+
 </br></br>
 *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOTE: Alternate method to get to LM Studio (only need to use if having trouble with above - otherwise, go to Step 2):*
 
