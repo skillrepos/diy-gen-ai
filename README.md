@@ -28,12 +28,6 @@ This will run for several minutes while it gets everything ready.
 
 This will run for several minutes as well.
 
-**4. After setup.sh finishes, run the script *./startLMStudio.sh* in the terminal.**
-```
-./startLMStudio.sh
-```
-
-![Running startlmstudio.sh](./images/dga06.png?raw=true "Running startlmstudio.sh")
 
 This will download the LM Studio image and start it running.
 
@@ -42,5 +36,16 @@ You can either open it in a separate browser instance or open it in the codespac
 ![Opening labs](./images/dga07.png?raw=true "Opening labs")
 
 **Now, you are ready for the labs!**
+
+** NOTE: If your codespace times out and you need to reopen it**
+A. Go to https://github.com/<your github userid>/codespaces
+B. Find the codespace in the list, right-click, and select *Open in browser*
+C. After the codespace opens up, run the script *./startLMStudio.sh* in the terminal.**
+```
+./startLMStudio.sh
+```
+
+![Running startlmstudio.sh](./images/dga06.png?raw=true "Running startlmstudio.sh")
+
 
 <br/><br/>
