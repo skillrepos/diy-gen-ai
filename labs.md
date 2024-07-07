@@ -180,9 +180,11 @@ python simple-app.py
 ```
 ![output of run](./images/dga61.png?raw=true "Output of run")
 
-5. Let's see what effect changing the temperature value has. Change the value for temperature in the program to 2.0 and then run the program again.
+5. Let's see what effect changing the temperature value has. Change the value for temperature in the program to 2.0 and then run the program again. (You can also change the prompt if you want. In this example, I changed it to "How do I build a house?"). Make sure to save your changes before running!
 
-6. Next, we'll switch to doing a simple example in JavaScript for LM Studio. First, switch to a new terminal by clicking the "+" button at the top right to add a second terminal.
+![output of run with temp = 2](./images/dga63.png?raw=true "Output of run with temp = 2")
+
+6. Next, we'll switch to doing a simple example in JavaScript for LM Studio. First, switch to a new terminal by using one of the methods mentioned previously.
 
 7. We need to *bootstrap* things for LM Studio by setting up the *lms* command line tool. Run the following command in the terminal.
 ```
