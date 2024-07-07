@@ -107,6 +107,7 @@ You are an excellent summarizer. Always answer with 3 key points.
 ![Switching to chat](./images/dga26a.png?raw=true "Switching to chat")
 
 6. Now, let's give our loaded model a query. In the *USER* text entry area, enter your query. (An example one is shown, but you can choose your own.)
+   
 ![User query](./images/dga27a.png?raw=true "User query")
 
 7. Example output from the sample query is shown below. Note that if you don't like the answer, you can click the *Regenerate* button to get another answer.
