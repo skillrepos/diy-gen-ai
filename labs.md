@@ -20,6 +20,16 @@
  
 ![Getting to LM Studio](./images/dga08a.png?raw=true "Getting to LM Studio")
 
+NOTE: Alternate method to get to LM Studio:
+
+Click on the *PORTS* tab (next to *TERMINAL*) in the lower part of the codespace screen. Hover the mouse over the *globe* icon and click on it to open up a new browser tab running noVNC. 
+
+![Getting to LM Studio](./images/dga58.png?raw=true "Getting to LM Studio")
+
+Then click on the *Connect* button.
+
+![Getting to LM Studio](./images/dga59.png?raw=true "Getting to LM Studio")
+
 2. After that, you should see the running instance of LM Studio. You'll probably be at the *Release Notes* screen. Just click the *Close* button.
 
 ![LM Studio instance](./images/dga41.png?raw=true "LM Studio instance")   
