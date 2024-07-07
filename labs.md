@@ -106,25 +106,25 @@ You are an excellent summarizer. Always answer with 3 key points.
 ```
 ![Switching to chat](./images/dga26a.png?raw=true "Switching to chat")
 
-6. Now, let's give our loaded model a query. In the *USER* text entry area, enter your query. (An example one is shown, but you can choose your own.)
+5. Now, let's give our loaded model a query. In the *USER* text entry area, enter your query. (An example one is shown, but you can choose your own.)
    
 ![User query](./images/dga27a.png?raw=true "User query")
 
-7. Example output from the sample query is shown below. Note that if you don't like the answer, you can click the *Regenerate* button to get another answer.
+6. Example output from the sample query is shown below. Note that if you don't like the answer, you can click the *Regenerate* button to get another answer.
 ![Switching to chat](./images/dga28b.png?raw=true "Switching to chat")
 
-8. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the next to bottom icon for the *Local Server* screen.
+7. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the next to bottom icon for the *Local Server* screen.
 ![Switching to chat](./images/dga29.png?raw=true "Switching to chat")
 
-9. On the *Local Server* screen, click on the green *Start Server* button on the left side. Afterwards, you should see activity showing the server is running.
+8. On the *Local Server* screen, click on the green *Start Server* button on the left side. Afterwards, you should see activity showing the server is running.
 ![Starting server](./images/dga30a.png?raw=true "Starting server")
 ![Server running](./images/dga43.png?raw=true "Server running")
 
-10. Now, back in the command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
+9. Now, back in the command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
 ```
 curl http://localhost:1234/v1/models
 ```
-11. Finally, let's try a simple query with curl. Try the query below.
+10. Finally, let's try a simple query with curl. Try the query below.
 ```
 curl http://localhost:1234/v1/chat/completions \
   -H "Content-Type: application/json" \
