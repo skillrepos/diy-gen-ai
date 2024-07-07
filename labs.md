@@ -1,7 +1,7 @@
 # DIY Gen AI
 ## Setting up your own LLM host, chat, and AI server using LM Studio - half-day workshop
 ## Session labs 
-## Revision 1.3 - 07/02/24
+## Revision 1.4 - 07/07/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
