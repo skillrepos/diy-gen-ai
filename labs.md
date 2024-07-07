@@ -148,12 +148,7 @@ curl http://localhost:1234/v1/chat/completions \
 
 **Purpose: In this lab, we'll see how to do some simple Python and JavaScript code to interact with the model.**
 
-1. While we got output from the last step of lab 2, it wasn't very useful in that form. Let's setup a Python environment to do some simple coding in. Run the commands below to set things up.
-```
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+1. While we got output from the last step of lab 2, it wasn't very useful in that form. Let's use the pre-configured python environment to do some simple coding in. 
 
 2. Now, let's create a new file called *simple-app.py* to put our code in.
 ```
@@ -173,10 +168,11 @@ completion = client.chat.completions.create(
         {"role": "user", "content": "Introduce yourself."}
     ],
     temperature=0.7,
-}
+)
 
 print(completion.choices[0].message.content)
 ```
+![Saving file](./images/dga60.png?raw=true "Saving file")
 
 4. Now, run the program to see the output.
 ```
