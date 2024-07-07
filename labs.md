@@ -205,7 +205,13 @@ lms create node-javascript-empty
 cd <project-name>
 ```
 
-10. Now, you can enter code like the following in your *src/index.js* file. (You can change the content if you want.)
+10. Now, you can enter code like the following in your *src/index.js* file. You can open the file from the terminal via the first command below. (You can change the system and/or user role content if you want.)
+
+```
+code src/index.js
+```
+</br>
+    
 ```
 // index.js
 const { LMStudioClient } = require("@lmstudio/sdk");
@@ -213,7 +219,7 @@ const { LMStudioClient } = require("@lmstudio/sdk");
 async function main() {
   // Create a client to connect to LM Studio, then load a model
   const client = new LMStudioClient();
-  const model = await client.llm.load("theBloke/phi-2.Q2_K.gguf");
+  const model = await client.llm.load("TheBloke/Llama-2-7B-Chat-GGUF/llama-2-7b-chat.Q3_K_M.gguf");
 
   // Predict!
   const prediction = model.respond([
@@ -228,7 +234,7 @@ async function main() {
 main();
 ```
 
-11. Finally, let's run the code!
+11. Save your changes if you haven't and then let's run the code!
 ```
 npm  start
 ```
