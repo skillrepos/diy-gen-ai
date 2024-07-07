@@ -300,7 +300,7 @@ Describe the image at https://media.istockphoto.com/id/1364253107/photo/dog-and-
 
 **Purpose: In this lab, we’ll start getting familiar with Ollama, another way to run models locally.**
 
-1. First, to get *ollama* downloaded, execute the following command:
+1. First, to get *ollama* downloaded, execute the command below. Then you can run the actual application to see usage.
 ```
 curl -fsSL https://ollama.com/install.sh | sh
 ```
