@@ -178,6 +178,7 @@ print(completion.choices[0].message.content)
 ```
 python simple-app.py
 ```
+![output of run](./images/dga61.png?raw=true "Output of run")
 
 5. Let's see what effect changing the temperature value has. Change the value for temperature in the program to 2.0 and then run the program again.
 
