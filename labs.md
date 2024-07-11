@@ -35,11 +35,11 @@
 
 2. After that, you should see the running instance of LM Studio. You'll probably be at the *Release Notes* screen. Just click the *Close* button.
 
-![LM Studio instance](./images/dga41.png?raw=true "LM Studio instance")   
+![LM Studio instance](./images/dga10.png?raw=true "LM Studio instance")   
 
 3. Scroll around the home page of the app to see the examples of recent models featured there. When done, just scroll back up to the top.
 
-![LM Studio models on home page](./images/dga10.png?raw=true "LM Studio models on home page")
+![LM Studio models on home page](./images/dga41.png?raw=true "LM Studio models on home page")
 
 
 4. Now we're going to search using LM Studio for a particular model - *llama*. Enter *llama* into the search bar and then click the *Go* button.
