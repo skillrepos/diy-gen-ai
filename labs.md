@@ -222,7 +222,7 @@ cd <project-name>
 ```
 ![creating new lms project](./images/dga65.png?raw=true "Creating new lms project")
 
-10. Now, you can enter code like the following in your *src/index.js* file. You can open the file from the terminal via the first command below. (You can change the system and/or user role content if you want.)
+10. Now, you can replace the code in your *src/index.js* file with the code below. You can open the file from the terminal via the first command below. (You can change the system and/or user *role* and *content* if you want.) Be sure to save your changes before running.
 
 ```
 code src/index.js
