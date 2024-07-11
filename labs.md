@@ -140,6 +140,20 @@ curl http://localhost:1234/v1/chat/completions \
     "stream": true
 }'
 ```
+11. To see the output in a more readable format, set the *stream* value to *false* and run the command again.
+```
+curl http://localhost:1234/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{ 
+    "messages": [ 
+      { "role": "system", "content": "Always answer in rhymes." },
+      { "role": "user", "content": "Introduce yourself." }
+    ], 
+    "temperature": 0.7, 
+    "max_tokens": -1,
+    "stream": false
+}'
+```    
 
 <p align="center">
 **[END OF LAB]**
