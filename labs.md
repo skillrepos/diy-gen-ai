@@ -91,9 +91,11 @@ llama
 **Purpose: In this lab, we'll see how to load and interact with the model through chat and terminal.**
 
 1. First, let's switch to the *AI Chat* interface in LM Studio by clicking on the third icon from the top in the left bar.
+   
 ![Switching to chat](./images/dga22.png?raw=true "Switching to chat")
 
 2. Now, at the top center of the *AI Chat* screen, click on the down arrow next to the *Select a model to load* text and select the *llama* model we downloaded.
+   
 ![Switching to chat](./images/dga23a.png?raw=true "Switching to chat")
   
 3. You should see a progress bar while the model is loading and then the model should show up as loaded. (If a dialog box comes up about the System Prompt, you can just choose to accept the new one.)
