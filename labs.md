@@ -387,7 +387,7 @@ import streamlit as st
 import ollama
 ```
 
-4. Now, we can set the title and initialize the session messages if we're starting out. (You can change the title and "content" sections if you want.)
+4. Now, we set the title and initialize the session messages. (You can change the title and "content" sections if you want.)
 ```
 st.title("DIY Gen AI Chatbot")
 # check messages variable in streamlit's session state
