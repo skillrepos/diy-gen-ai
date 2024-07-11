@@ -171,7 +171,7 @@ curl http://localhost:1234/v1/chat/completions \
 code simple-app.py
 ```
 
-3. Enter the code below in the *simple-app.py* file and then save when done. (Again, you can change the content to whatever you want.)
+3. Enter the code below in the *simple-app.py* file and then save when done. (Again, you can change the *content* strings to whatever you want.)
 ```
 from openai import OpenAI
 
