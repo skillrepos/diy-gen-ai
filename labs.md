@@ -336,7 +336,7 @@ Go to https://ollama.com and in the *Search models* box at the top, enter *llava
 4. Click on the first entry to go to the specific page about this model. Scroll down and scan the various information available about this model.
 ![reading about llava](./images/dga40a.png?raw=true "reading about llava")
 
-5. While it's not necessary to do as a separate step, first pull the model down with ollama. (This will take a few minutes.)
+5. Switch back to a terminal in your codespace. While it's not necessary to do as a separate step, first pull the model down with ollama. (This will take a few minutes.)
 ```
 ollama pull llava
 ```
