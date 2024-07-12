@@ -5,7 +5,7 @@ Repository for workshop with LM Studio, Hugging Face, and Ollama
 These instructions will guide you through configuring a GitHub Codespaces environment that you can use to run the course labs. 
 If you prefer to install LM Studio directly, you can get it from https://lmstudio.ai. Note that for Mac, it is only supported on systems with the M# chips. 
 
-If you install it yourself, some elements in the labs may be different for your setup. The instructions here will reference the codespace version.
+If you install it yourself, some elements in the labs may be different for your setup. The instructions here will reference running in the codespace environment.
 
 If you wish to use the codespace environment which will provide you with a running instance of LM Studio, follow the instructions below.
 
