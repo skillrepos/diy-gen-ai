@@ -34,9 +34,9 @@ To do this, when logged in to GitHub, go to https://github.com/settings/codespac
 
 1. Go to https://github.com/<your github userid>/codespaces
 2. Find the codespace in the list, right-click, and select *Open in browser*
-3. After the codespace opens up, run the script *./scripts/startLMStudio.sh* in the terminal.**
+3. After the codespace opens up, run the script *./scripts/startLMStudio.sh* in the terminal. (You might need to run this more than once if restarting a codespace depending on timing.)
 ```
-./startLMStudio.sh
+./scripts/startLMStudio.sh
 ```
 
 ![Running startlmstudio.sh](./images/dga06.png?raw=true "Running startlmstudio.sh")
