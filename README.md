@@ -17,7 +17,16 @@ Click here ➡️  [![Open in GitHub Codespaces](https://github.com/codespaces/b
 
 ![Creating new codespace from button](./images/dga01.png?raw=true "Creating new codespace from button")
 
-This will run for up to 7 minutes while it gets everything ready.
+This will run for up to 10 minutes while it gets everything ready.
+
+NOTE: At the end, after the codespace is actually started, it will still be running some post-startup scripts that will take a few more minutes to complete as shown below:
+
+![Running post-install scripts](./images/dga66.png?raw=true "Running post-install scripts")
+
+The codespace is ready to use when you see a prompt like the one shown below in its terminal.
+
+![Ready to use](./images/dga67.png?raw=true "Ready to use")
+
 
 **3. Open up the *labs.md* file so you can follow along with the labs.**
 You can either open it in a separate browser instance or open it in the codespace. If you open it in the codespace, make sure to *Open Preview* so you can see it in Markdown form as intended.
