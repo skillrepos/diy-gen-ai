@@ -63,8 +63,7 @@ llama
 
 8. Now, let's actually download one of the models. Back in the list, collapse the expanded *README* and *Learn more* sections. In the left column, select the row for the *TheBloke/Llama-2-7B-Chat-GGUF* file. In the right column, select the row for the *llama-2-7b-chat.Q3_K_M.gguf* file and click the *Download* button. You'll see a progress bar at the bottom of the screen and an indication in the row when it is completely downloaded.
 
-![Downloading the model](./images/dga16.png?raw=true "Downloading the model") 
-![Downloaded the model](./images/dga17.png?raw=true "Downloaded the model")
+![Downloading the model](./images/dga68.png?raw=true "Downloading the model") 
 
 9. Now let's take a look at the model we downloaded on the community site https://huggingface.co/models. Open that link in a separate tab and you'll see some of the different types of models and various models available for download and use.
 ![huggingface](./images/dga18.png?raw=true "huggingface")
