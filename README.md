@@ -19,6 +19,10 @@ Click here ➡️  [![Open in GitHub Codespaces](https://github.com/codespaces/b
 
 This will run for up to 10 minutes while it gets everything ready.
 
+**IMPORTANT NOTE:** If you get error dialogs that popup about codespace extension version and eventually a dialog like the one below, just click on the *Retry* button to proceed. The codespace will appear to restart but should work after that.
+
+![Bypassing issue](./images/dga70.png?raw=true "Bypassing issue")
+
 NOTE: At the end, after the codespace is actually started, it will still be running some post-startup scripts that will take a few more minutes to complete as shown below:
 
 ![Running post-install scripts](./images/dga66.png?raw=true "Running post-install scripts")
