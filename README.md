@@ -9,7 +9,7 @@ If you install it yourself, some elements in the labs may be different for your 
 
 If you wish to use the codespace environment which will provide you with a running instance of LM Studio, follow the instructions below.
 
-**1. Click on the button below to start a new codespace from this repository.
+**1. Click on the button below to start a new codespace from this repository.**
 
 Click here ➡️  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/diy-gen-ai?quickstart=1)
 
