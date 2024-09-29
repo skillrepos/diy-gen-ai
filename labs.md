@@ -350,7 +350,7 @@ ollama run llava
 ```
 7. Now you can query the model by inputting text at the *>>>Send a message (/? for help)* prompt. Since this is a multimodal model, you can ask it about an image too. Try the following prompt that references a smiley face file in the repo.
 ```
-What's in this image?  images/smiley.jpg
+What's in this image?  /workspaces/diy-gen-ai/images/smiley.jpg
 ```
 ![smiley face analysis](./images/dga64a.png?raw=true "Smiley face analysis")
 
