@@ -352,7 +352,7 @@ ollama run llava
 ```
 What's in this image?  /workspaces/diy-gen-ai/images/smiley.jpg
 ```
-![smiley face analysis](./images/dga64a.png?raw=true "Smiley face analysis")
+![smiley face analysis](./images/dga69.png?raw=true "Smiley face analysis")
 
 8. Now, let's try a call with the API. You can stop the current run with a Ctrl-D or switch to another terminal. Then put in the command below. 
 ```
