@@ -1,7 +1,7 @@
 # DIY Gen AI
 ## Setting up your own LLM host, chat, and AI server using LM Studio - half-day workshop
 ## Session labs 
-## Revision 1.5 - 09/28/24
+## Revision 1.6 - 09/29/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -115,6 +115,7 @@ You are an excellent summarizer. Always answer with 3 key points.
 ![Switching to chat](./images/dga28b.png?raw=true "Switching to chat")
 
 7. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the next to bottom icon for the *Local Server* screen.
+   
 ![Switching to chat](./images/dga29.png?raw=true "Switching to chat")
 
 8. On the *Local Server* screen, click on the green *Start Server* button on the left side. Afterwards, you should see activity showing the server is running.
@@ -125,6 +126,7 @@ You are an excellent summarizer. Always answer with 3 key points.
 ```
 curl http://localhost:1234/v1/models
 ```
+
 10. Finally, let's try a simple query with curl. Try the query below.
 ```
 curl http://localhost:1234/v1/chat/completions \
@@ -139,6 +141,7 @@ curl http://localhost:1234/v1/chat/completions \
     "stream": true
 }'
 ```
+
 11. To see the output in a more readable format, set the *stream* value to *false* and run the command again.
 ```
 curl http://localhost:1234/v1/chat/completions \
