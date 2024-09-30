@@ -1,6 +1,6 @@
 {
    // "build": { "dockerfile": "Dockerfile" },
-    "image": "brent811/diygenai:2.0.0",
+    "image": "mcr.microsoft.com/devcontainers/base:bookworm",
     "hostRequirements": {
        "cpus": 4,
        "memory": "16gb",
