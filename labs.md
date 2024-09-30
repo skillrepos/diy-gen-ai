@@ -1,7 +1,7 @@
 # DIY Gen AI
 ## Setting up your own LLM host, chat, and AI server using LM Studio - half-day workshop
 ## Session labs 
-## Revision 1.6 - 09/29/24
+## Revision 1.7 - 09/29/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -217,19 +217,14 @@ lms
 ```
 ![checking lms](./images/dga33.png?raw=true "checking lms")
 
-9. Install a version of the sdk that is compatible with our version of LM Studio by entering the command below.
-```
-npm i @lmstudio/sdk@0.0.12
-```
-
-10. Use the *lms* command to create a new empty project, run through it's interactive process, and then switch to it. You can pick whatever project name you want instead of the default. In the sample output below, we used "*my-proj*".
+9. Use the *lms* command to create a new empty project, run through it's interactive process, and then switch to it. You can pick whatever project name you want instead of the default. In the sample output below, we used "*my-proj*".
 ```
 lms create node-javascript-empty
 cd <project-name>
 ```
 ![creating new lms project](./images/dga65.png?raw=true "Creating new lms project")
 
-11. Now, you can replace the code in your *src/index.js* file with the code below. You can open the file from the terminal via the first command below. (You can change the system and/or user *role* and *content* if you want.) Be sure to save your changes before running.
+10. Now, you can replace the code in your *src/index.js* file with the code below. You can open the file from the terminal via the first command below. (You can change the system and/or user *role* and *content* if you want.) Be sure to save your changes before running.
 
 ```
 code src/index.js
@@ -256,6 +251,11 @@ async function main() {
 }
 
 main();
+```
+
+11. As a final prep step, install a version of the sdk that is compatible with our version of LM Studio by entering the command below.
+```
+npm i @lmstudio/sdk@0.0.12
 ```
 
 12. Save your changes if you haven't and then let's run the code!
