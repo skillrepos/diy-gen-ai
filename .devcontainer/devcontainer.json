@@ -29,5 +29,5 @@
     "runArgs": [ "--cap-add=SYS_ADMIN", "--privileged" ],
     "forwardPorts": [5800],
     "portsAttributes": {"5800": {"label": "LM Studio"}},
-    "postCreateCommand": "bash -i scripts/pysetup.sh py_env && bash -i scripts/startLMStudio.sh"
+    "postCreateCommand": "bash -i scripts/setup.sh && bash -i scripts/pysetup.sh py_env && bash -i scripts/startLMStudio.sh"
 }
