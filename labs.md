@@ -280,7 +280,7 @@ npm  start
 
 ![code to use model](./images/dga45.png?raw=true "code to use model")
    
-4. Switch back to your codespace. Create a new file named dgpt-med.py (or whatever you want to call it). Paste the code you copied from the model card page into the file. You can create the new file from the terminal using:
+4. Switch back to your codespace and the *diy-gen-ai* directory (if not there). Create a new file named dgpt-med.py (or whatever you want to call it). Paste the code you copied from the model card page into the file. You can create the new file from the terminal using:
 
 ```
 code dgpt-med.py
