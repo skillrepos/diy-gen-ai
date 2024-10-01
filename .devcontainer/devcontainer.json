@@ -1,6 +1,6 @@
 {
    // "build": { "dockerfile": "Dockerfile" },
-    "image": "brent811/diygenai:2.0.0",
+    "image": "mcr.microsoft.com/devcontainers/base:bookworm",
     "hostRequirements": {
        "cpus": 4,
        "memory": "16gb",
@@ -29,5 +29,5 @@
     "runArgs": [ "--cap-add=SYS_ADMIN", "--privileged" ],
     "forwardPorts": [5800],
     "portsAttributes": {"5800": {"label": "LM Studio"}},
-    "postCreateCommand": "bash -i scripts/pysetup.sh py_env && bash -i scripts/startLMStudio.sh"
+    "postCreateCommand": "bash -i scripts/pysetup.sh py_env && bash -i scripts/setup.sh && bash -i scripts/startLMStudio.sh"
 }
