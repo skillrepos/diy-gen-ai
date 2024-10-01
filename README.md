@@ -11,17 +11,13 @@ If you wish to use the codespace environment which will provide you with a runni
 
 **1. Click on the button below to start a new codespace from this repository.**
 
-Click here ➡️  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/diy-gen-ai/tree/option2?quickstart=1)
+Click here ➡️  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/diy-gen-ai?quickstart=1)
 
 **2. Then click on the option to create a new codespace.**
 
 ![Creating new codespace from button](./images/dga01.png?raw=true "Creating new codespace from button")
 
-This will run for up to 10 minutes while it gets everything ready.
-
-**IMPORTANT NOTE:** If you get error dialogs that popup about codespace extension version and eventually a dialog like the one below, just click on the *Retry* button to proceed. The codespace will appear to restart but should work after that.
-
-![Bypassing issue](./images/dga70.png?raw=true "Bypassing issue")
+This will run for 10 minutes or more while it gets everything ready.
 
 NOTE: At the end, after the codespace is actually started, it will still be running some post-startup scripts that will take a few more minutes to complete as shown below:
 
