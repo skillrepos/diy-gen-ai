@@ -8,7 +8,7 @@ cd build
 meson setup ..
 sudo ninja install
 sudo apt install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libgbm-dev libnss3-dev libxss-dev libasound2 -y
-cd /workspaces/llm-explore
+cd /workspaces/diy-gen-ai
 rm -rf fuse-3.16.2
 rm fuse-3.16.2.tar.gz
 
