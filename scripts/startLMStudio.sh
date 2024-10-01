@@ -1,3 +1,4 @@
+set -x
 docker compose up -d
 if ! [ -e LM_Studio.AppImage ]; then
     wget https://releases.lmstudio.ai/linux/x86/0.2.26/beta/LM_Studio-0.2.26.AppImage
