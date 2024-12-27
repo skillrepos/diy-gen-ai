@@ -89,38 +89,43 @@ llama
 
 **Purpose: In this lab, we'll see how to load and interact with the model through chat and terminal.**
 
-1. First, let's switch to the *AI Chat* interface in LM Studio by clicking on the third icon from the top in the left bar.
+1. First, let's switch back to the browser tab where LM Studio is running. If not already selected, click the *chat bubble* (yellow/orange) icon at the top left to get to the *AI Chat* interface in LM Studio.
    
-![Switching to chat](./images/dga22.png?raw=true "Switching to chat")
+![Switching to chat](./images/dga82.png?raw=true "Switching to chat")
 
 2. Now, at the top center of the *AI Chat* screen, click on the down arrow next to the *Select a model to load* text and select the *llama* model we downloaded.
    
-![Switching to chat](./images/dga23a.png?raw=true "Switching to chat")
+![Select model 1](./images/dga83.png?raw=true "Select model 1")
+![Select model 2](./images/dga84.png?raw=true "Select model 2")
   
-3. You should see a progress bar while the model is loading and then the model should show up as loaded. (If a dialog box comes up about the System Prompt, you can just choose to accept the new one.)
-![Switching to chat](./images/dga24.png?raw=true "Switching to chat")
-![Switching to chat](./images/dga25a.png?raw=true "Switching to chat")
+3. Due to an issue with LM Studio, we need to do one more step before loading. After you've clicked on the model to select it, you should see a dialog with some load options. Click on the *Context Length* select and drag it to the left to back it off from the max. (It doesn't seem to matter how much.) Then click on the *Load Model* button at the bottom right.
 
-4. Over in the right-hand side window, you can explore the different options. Change the *System Prompt* field to be:
+![extra step](./images/dga85.png?raw=true "Extra step")
+
+4. You should see a progress bar in the top *load* area while the model is loading and then the model should be available. You'll also be able to see the system resources now used by the loaded model in the bottom right.
+![loaded model](./images/dga86.png?raw=true "Loaded model")
+
+5. Let's look at the different chat settings available. Click the *Settings* icon in the upper right (looks like a beaker). You can expand the various sub-areas and expand them to see the options. Before you go to the next step, change the *System Prompt* field to be:
 ```
 You are an excellent summarizer. Always answer with 3 key points.
 ```
-![Switching to chat](./images/dga26a.png?raw=true "Switching to chat")
+![opening settings](./images/dga87.png?raw=true "opening settings")
+![setting system prompt](./images/dga88.png?raw=true "setting system prompt")
 
-5. Now, let's give our loaded model a query. In the *USER* text entry area, enter your query. (An example one is shown, but you can choose your own.)
+5. Now, let's give our loaded model a query. In the *USER* text entry area, enter your query. (An example one is shown, but you can choose your own.) Hit Enter or *Send* after inputting the query.
    
-![User query](./images/dga27a.png?raw=true "User query")
+![User query](./images/dga89.png?raw=true "User query")
 
-6. Example output from the sample query is shown below. Note that if you don't like the answer, you can click the *Regenerate* button to get another answer.
-![Switching to chat](./images/dga28b.png?raw=true "Switching to chat")
+6. This will take a while to run given the limitations of our codespace system. Example output from the sample query is shown below. There are a number of follow-up options available under the output. For example, if you don't like the answer, you can click the *Regenerate* button to get another answer.
+![output from AI](./images/dga90.png?raw=true "output from AI")
 
-7. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the next to bottom icon for the *Local Server* screen.
+7. Now, let's have LM Studio run a local server for this model. In the lefthand bar, select the green *terminal* icon to switch to *Developer* mode.
    
-![Switching to chat](./images/dga29.png?raw=true "Switching to chat")
+![Switching to developer](./images/dga91.png?raw=true "Switching to chat")
 
-8. On the *Local Server* screen, click on the green *Start Server* button on the left side. Afterwards, you should see activity showing the server is running.
-![Starting server](./images/dga30a.png?raw=true "Starting server")
-![Server running](./images/dga43.png?raw=true "Server running")
+8. You should now be on the *Local Server* screen (highlighted in top row)., click on the green *Start* button in the *Server status* section on the upper left. Afterwards, you should see activity showing the server is running.
+![Starting server](./images/dga92.png?raw=true "Starting server")
+![Server running](./images/dga93.png?raw=true "Server running")
 
 9. Now, switch back to your codespace and go to a terminal. (You can add a 2nd terminal if you want via the "+" icon over in the far right of the same line as TERMINAL. Or you can right-click and select New Terminal* or *Split Terminal*.) In the terminal's command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
 ```
@@ -141,6 +146,8 @@ curl http://localhost:1234/v1/chat/completions \
     "stream": true
 }'
 ```
+![streamed output](./images/dga94.png?raw=true "streamed output")
+
 
 11. To see the output in a more readable format, set the *stream* value to *false* and run the command again.
 ```
@@ -155,7 +162,8 @@ curl http://localhost:1234/v1/chat/completions \
     "max_tokens": -1,
     "stream": false
 }'
-```    
+```
+![unstreamed output](./images/dga95.png?raw=true "unstreamed output")    
 
 <p align="center">
 **[END OF LAB]**
