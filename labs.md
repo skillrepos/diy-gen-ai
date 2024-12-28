@@ -241,12 +241,16 @@ code src/index.js
     
 ```
 // index.js
-const { LMStudioClient } = require("@lmstudio/sdk");
+import { LMStudioClient } from "@lmstudio/sdk";
 
 async function main() {
   // Create a client to connect to LM Studio, then load a model
   const client = new LMStudioClient();
-  const model = await client.llm.load("TheBloke/Llama-2-7B-Chat-GGUF/llama-2-7b-chat.Q3_K_M.gguf");
+  const model = await client.llm.load("llama-2-7b-chat", {
+    config: { 
+      contextLength: 2048,
+    },
+  });
 
   // Predict!
   const prediction = model.respond([
@@ -263,7 +267,7 @@ main();
 
 11. As a final prep step, install a version of the sdk that is compatible with our version of LM Studio by entering the command below.
 ```
-npm i @lmstudio/sdk@0.0.12
+npm i @lmstudio/sdk@0.3.0
 ```
 
 12. Save your changes if you haven't and then let's run the code!
