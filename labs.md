@@ -232,7 +232,7 @@ cd <project-name>
 ```
 ![creating new lms project](./images/dga65.png?raw=true "Creating new lms project")
 
-10. Now, you can replace the code in your *src/index.js* file with the code below. You can open the file from the terminal via the first command below. (You can change the system and/or user *role* and *content* if you want.) Be sure to save your changes before running.
+10. Now, you can replace the code in your *src/index.js* file with the code below. You can open the file from the terminal via the first command below. Then **copy the code below and paste it into the file, overwriting the previous contents.** (You can change the system and/or user *role* and *content* if you want.) Be sure to save your changes before running.
 
 ```
 code src/index.js
@@ -272,15 +272,20 @@ async function main() {
 
 ```
 
+![adding code](./images/dga97.png?raw=true "adding code")
+
 11. As a final prep step, install a version of the sdk that is compatible with our version of LM Studio by entering the command below.
 ```
 npm i @lmstudio/sdk@0.3.0
 ```
 
-12. Save your changes if you haven't and then let's run the code!
+12. Save your changes if you haven't and then let's run the code! The screenshot further down shows some example output.
 ```
 npm  start
 ```
+
+![running code](./images/dga96.png?raw=true "running code")
+
 <p align="center">
 **[END OF LAB]**
 </p>
