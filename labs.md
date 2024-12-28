@@ -246,11 +246,19 @@ import { LMStudioClient } from "@lmstudio/sdk";
 async function main() {
   // Create a client to connect to LM Studio, then load a model
   const client = new LMStudioClient();
-  const model = await client.llm.load("llama-2-7b-chat", {
-    config: { 
-      contextLength: 2048,
-    },
-  });
+  let model; 
+  // Don't load another instance of the model if there's one already loaded
+  const loadedModels = await client.llm.listLoaded();
+  if (loadedModels.length === 0) {
+      model = await client.llm.load("llama-2-7b-chat", {
+      config: { 
+        contextLength: 2048,
+      },
+    });
+  }
+  else {
+    model = await client.llm.get({ identifier: loadedModels[0].identifier });
+  }
 
   // Predict!
   const prediction = model.respond([
@@ -262,7 +270,6 @@ async function main() {
   }
 }
 
-main();
 ```
 
 11. As a final prep step, install a version of the sdk that is compatible with our version of LM Studio by entering the command below.
