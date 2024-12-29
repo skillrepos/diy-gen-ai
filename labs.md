@@ -331,6 +331,7 @@ python dgpt-med.py
 ![running the model](./images/dga48.png?raw=true "running the model")
 
 7. Let's now switch to a different model. Go back to the Hugging Face search and look for *phi3.5*. Find and select the entry for *microsoft/Phi-3.5-mini-instruct*.
+
 ![finding the phi3-vision model](./images/dga98.png?raw=true "finding the phi3-vision model")
 
 8. Switch to the *Files and versions* page to see the sizes of the files in the Git repository. Note the larger sizes of the model files themselves.
