@@ -324,20 +324,22 @@ python dgpt-med.py
 ```
 ![running the model](./images/dga48.png?raw=true "running the model")
 
-7. Let's now switch to a different model. Go back to the Hugging Face search and look for *phi3-vision*. Find and select the entry for *microsoft/Phi-3-vision-128k-instruct*.
-![finding the phi3-vision model](./images/dga49.png?raw=true "finding the phi3-vision model")
+7. Let's now switch to a different model. Go back to the Hugging Face search and look for *phi3.5*. Find and select the entry for *microsoft/Phi-3.5-mini-instruct*.
+![finding the phi3-vision model](./images/dga98.png?raw=true "finding the phi3-vision model")
 
 8. Switch to the *Files and versions* page to see the sizes of the files in the Git repository. Note the larger sizes of the model files themselves.
-![examining the model files](./images/dga53.png?raw=true "examining the model files")
+![examining the model files](./images/dga99.png?raw=true "examining the model files")
 
-9. Now, let's see how we can try this model out with no setup on our part. Go back to the *Model card* tab, and scroll down to the *Resources and Technical Documentation* section. Under that, select the entry for *Phi-3 on Azure AI Studio*.
-![Invoking model on Azure AI Studio](./images/dga54.png?raw=true "Invoking the model on Azure AI Studio")
+9. If you want to try the remaining steps, you will need a Hugging Face userid. To sign up for a free one, go to [huggingface/join](https://huggingface.co/join).
 
-10. This will start up a separate browser instance of Azure AI Studio with the model loaded so you can query it. In the prompt area, enter in a prompt to have the AI describe a picture. You can upload one, enter the URL of one on the web, or use the example one suggested below. After you submit your prompt, the model should return a description of the photo. (If you get a response like *"Sorry I can't assist with that."*, refresh the page and try again.)
+10. Now, let's see how we can try this model out with no setup on our part. Go back to the *Model card* tab, and on the right-hand side, you should see an *Inference API* section. In the prompt area, you can enter a prompt and hit *Send* to see the model's response.
+![Invoking model on Azure AI Studio](./images/dga100.png?raw=true "Invoking the model on Azure AI Studio")
+
+11. If you want, you can also try the *vision* version of this model by selecting the *vision-instruct* link to the right and prompt it to describe a link to an image or attach an image. An example prompt is included below. (Note that this does not always work as sometimes the model may timeout trying to load.)
 ```
 Describe the image at https://media.istockphoto.com/id/1364253107/photo/dog-and-cat-as-best-friends-looking-out-the-window-together.jpg?s=2048x2048&w=is&k=20&c=Do171m5e2DbPIlWDs1JfHn-g8Et_Hxb2AskHg4cRYY4=
 ```
-![Describing an image](./images/dga55.png?raw=true "Describing an image")
+![Describing an image](./images/dga101.png?raw=true "Describing an image")
 
 <p align="center">
 **[END OF LAB]**
