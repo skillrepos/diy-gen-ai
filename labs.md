@@ -11,9 +11,11 @@
 
 **NOTE 3: To get a closer view of the LM Studio App, you can click on the *View* menu at the top and then click on *Zoom In*.**
 
+![Zooming in](./images/dga72.png?raw=true "Zooming in")
+
 **NOTE 4: To do some of the later steps in Lab 4, you will need to have a Hugging Face account. You can sign up for a free one at [huggingface/join](https://huggingface.co/join).**
 
-![Zooming in](./images/dga72.png?raw=true "Zooming in")
+
 
 **Lab 1 - Getting familiar with LM Studio and models**
 
