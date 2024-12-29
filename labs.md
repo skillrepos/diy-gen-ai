@@ -15,7 +15,7 @@
 
 **NOTE 4: To do some of the later steps in Lab 4, you will need to have a Hugging Face account. You can sign up for a free one at [huggingface/join](https://huggingface.co/join).**
 
-<br/><br/>
+</br></br>
 
 **Lab 1 - Getting familiar with LM Studio and models**
 
