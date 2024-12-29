@@ -53,7 +53,7 @@ llama
 
 ![llama model info](./images/dga75.png?raw=true "llama model info")  
 
-5. Now, let's actually download one of the models. In the top search field, enter *llama-2-7B-Chat-GGUF* file and hit Enter.
+5. Now, let's actually download one of the models. In the top search field, enter *llama-2-7B-Chat-GGUF*.
 
 ![finding the model](./images/dga76.png?raw=true "finding the model")   
   
@@ -66,7 +66,7 @@ llama
 ![downloading the model](./images/dga78.png?raw=true "downloading the model")
 ![download progress](./images/dga79.png?raw=true "download progress")
 
-8. Due to an issue with LM Studio, we can't load the model directly through the *Load model* buttons on the screen, so you can close the download dialogs and the *Mission Control* dialogs for now.
+8. Due to an issue with LM Studio, we can't load the model directly through the *Load model* buttons on the screen, so you can close the download dialogs and the *Mission Control* dialogs after the download is complete.
 
 ![close dialogs](./images/dga80.png?raw=true "close dialogs")
 
