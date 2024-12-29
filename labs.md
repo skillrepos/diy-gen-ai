@@ -470,7 +470,7 @@ if prompt := st.chat_input():
       st.session_state.messages.append({"role": "assistant", "content": st.session_state["full_message"]})
 ```
 
-8. Now, save your file and run it with the following command. (You can just ignore the email field.)
+8. Now, save your file and run it with the following command. (You can just ignore the email field and hit Enter at that prompt.)
 ```
 streamlit run chatapp.py
 ```
