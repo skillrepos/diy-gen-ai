@@ -1,7 +1,7 @@
 # DIY Gen AI
 ## Setting up your own LLM host, chat, and AI server using LM Studio - half-day workshop
 ## Session labs 
-## Revision 2.2 - 12/29/24
+## Revision 2.3 - 01/02/25
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -129,7 +129,9 @@ You are an excellent summarizer. Always answer with 3 key points.
 ![Switching to developer](./images/dga91.png?raw=true "Switching to chat")
 
 8. You should now be on the *Local Server* screen (highlighted in top row)., click on the green *Start* button in the *Server status* section on the upper left. Afterwards, you should see activity showing the server is running.
+
 ![Starting server](./images/dga92.png?raw=true "Starting server")
+
 ![Server running](./images/dga93.png?raw=true "Server running")
 
 9. Now, switch back to your codespace and go to a terminal. (You can add a 2nd terminal if you want via the "+" icon over in the far right of the same line as TERMINAL. Or you can right-click and select New Terminal* or *Split Terminal*.) In the terminal's command line, let's check to see which model(s) are loaded in LM Studio. You can use the following command.
